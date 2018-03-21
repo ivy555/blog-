@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Base</title>
+  
+  </head>
+  <body>
+
+  <nav class="navbar navbar-default navbar-static-top">
+    <ul class="nav navbar-nav">
+      <li><a class="navbar-brand" href="{% url 'basic_app:list'%}">School</a></li>
+      <li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
+      <li><a href="#"></a> </li>
+
+    </ul>
+
+  </nav>
+
+  <div class="container">
+    {% block body_block %}
+    {% endblock %}
+
+  </div>
+
+
+
+  </body>
+</html>
